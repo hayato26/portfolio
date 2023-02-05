@@ -14,8 +14,12 @@ class CreateRepairsTable extends Migration
     public function up()
     {
         Schema::create('repairs', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('id',true);
+            $table->unsignedBigInteger('user_id');
+            $table->unsignedBigInteger('managers_id');
+            $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->softDeletes();
         });
     }
 

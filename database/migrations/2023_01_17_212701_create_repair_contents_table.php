@@ -14,8 +14,14 @@ class CreateRepairContentsTable extends Migration
     public function up()
     {
         Schema::create('repair_contents', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('id',true);
+            $table->unsignedBigInteger('repair_id');
+            $table->integer('wage');
+            $table->integer('trip_fee');
+            $table->integer('parts_fee');
+            $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->softDeletes();
         });
     }
 

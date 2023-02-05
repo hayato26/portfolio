@@ -14,8 +14,13 @@ class CreateContentPartsTable extends Migration
     public function up()
     {
         Schema::create('content_parts', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+            $table->unsignedBigInteger('id',true);
+            $table->string('name');
+            $table->integer('parts_number');
+            $table->integer('price');
+            $table->timestamp('created_at')->default(\DB::raw('CURRENT_TIMESTAMP'));
+            $table->timestamp('updated_at')->default(\DB::raw('CURRENT_TIMESTAMP on update CURRENT_TIMESTAMP'));
+            $table->softDeletes();
         });
     }
 
