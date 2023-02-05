@@ -128,12 +128,12 @@
                 </div>
             </div>
         </div>
-        <!-- 位置情報登録 -->
+        <!-- 位置情報登録
         <div id="map" style="height:500px"></div>
-	    <script src="{{ asset('/js/setLocation.js') }}"></script> //追加
-        <script src="{{ asset('/js/result.js') }}"></script>
-        <script src="https://maps.googleapis.com/maps/api/jslanguage=ja&region=JP&key=AIzaSyBrAYTpz9zu0CARYKdQNyYxjuICkA5ajI&callback=initMap" async defer>
-	    </script>
+	    <script src="{{ asset('/js/setLocation.js') }}"></script> -->
+        <!-- <script src="{{ asset('/js/result.js') }}"></script> -->
+        <!-- <script src="https://maps.googleapis.com/maps/api/jslanguage=ja&region=JP&key=AIzaSyBrAYTpz9zu0CARYKdQNyYxjuICkA5ajI&callback=initMap" async defer>
+	    </script> -->
     </body>
 </html>
 
