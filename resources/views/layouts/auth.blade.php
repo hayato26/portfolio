@@ -76,17 +76,7 @@
         </nav>
 
         <main class="py-4">
-            <!-- <div class="container text-center"> -->
-            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-            <!-- <div class="row">
-                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                <div class="col-md-8">.col-md-8</div>
-            </div> -->
-            <div class="row">
-                <div class="col-md-2">メニュー欄</div>
-                <div class="col-md-8">詳細ページ</div>
-                    <!-- @yield('content') -->
-            </div>
+            @yield('content')
         </main>
     </div>
 </body>
