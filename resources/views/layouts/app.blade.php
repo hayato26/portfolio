@@ -83,7 +83,18 @@
                 <div class="col-md-8">.col-md-8</div>
             </div> -->
             <div class="row">
-                <div class="col-md-2">メニュー欄</div>
+                <div class="col-md-2">
+                    <div class="card text-bg-info mb-3" style="max-width: 18rem;">
+                        <div class="card-body">
+                            <ul class="list-group">
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-info">通知一覧</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-info">修理履歴</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-info">トラック予約</a>
+                                <a href="#" class="list-group-item list-group-item-action list-group-item-info">管理画面</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
                 <div class="col-md-8">詳細ページ</div>
                     <!-- @yield('content') -->
             </div>
