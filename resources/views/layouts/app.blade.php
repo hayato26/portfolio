@@ -97,6 +97,7 @@
                 </div>
                 <div class="col-md-8">詳細ページ</div>
                     <!-- @yield('content') -->
+                    <!-- コメントアウト -->
             </div>
         </main>
     </div>
