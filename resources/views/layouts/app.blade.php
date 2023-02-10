@@ -89,6 +89,7 @@
                             <ul class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">通知一覧</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">修理履歴</a>
+                                <!-- 下記リンクに track.blade.php を挿入したいです。 -->
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">トラック予約</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">管理画面</a>
                             </ul>
