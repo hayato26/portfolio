@@ -76,12 +76,6 @@
         </nav>
 
         <main class="py-4">
-            <!-- <div class="container text-center"> -->
-            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
-            <!-- <div class="row">
-                <div class="col-6 col-md-4">.col-6 .col-md-4</div>
-                <div class="col-md-8">.col-md-8</div>
-            </div> -->
             <div class="row">
                 <div class="col-md-2">
                     <div class="card text-bg-info mb-3" style="max-width: 18rem;">
@@ -89,14 +83,18 @@
                             <ul class="list-group">
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">通知一覧</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">修理履歴</a>
-                                <a href="#" class="list-group-item list-group-item-action list-group-item-info">トラック予約</a>
+                                <!-- 下記リンクに track.blade.php を挿入したいです。 -->
+                                <a href="{{ route('track') }}"  class="list-group-item list-group-item-action list-group-item-info">トラック予約</a>
+                                <a href="#"  class="list-group-item list-group-item-action list-group-item-info">トラック予約一覧</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">管理画面</a>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">詳細ページ</div>
-                    <!-- @yield('content') -->
+                <div class="col-md-8">
+                    @yield('content')
+                </div>
+                    <!-- コメントアウト -->
             </div>
         </main>
     </div>
