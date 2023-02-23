@@ -85,13 +85,15 @@
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">修理履歴</a>
                                 <!-- 下記リンクに track.blade.php を挿入したいです。 -->
                                 <a href="{{ route('track') }}"  class="list-group-item list-group-item-action list-group-item-info">トラック予約</a>
+                                <a href="#"  class="list-group-item list-group-item-action list-group-item-info">トラック予約一覧</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">管理画面</a>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-8">詳細ページ</div>
+                <div class="col-md-8">
                     @yield('content')
+                </div>
                     <!-- コメントアウト -->
             </div>
         </main>

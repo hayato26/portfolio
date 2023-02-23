@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use app\Models\track;
 
-class HomeController extends Controller
+class TrackController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -23,6 +24,15 @@ class HomeController extends Controller
      */
     public function index()
     {
+        return view('track');
+    }
+
+    public function track(Request $request)
+    {
+        $posts = $request -> all();
+        dd($posts);
+
+        Memo::DB::insert([1, 'Dayle']);
         return view('track');
     }
 }
