@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TrackController;
+use App\Http\Controllers\TrackListController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,4 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 Route::get('/track', [App\Http\Controllers\TrackController::class, 'index'])->name('track');
 Route::post('/track', [App\Http\Controllers\TrackController::class, 'track'])->name('track');
+Route::get('/track_list', [App\Http\Controllers\TrackListController::class, 'track_list'])->name('track_list');

@@ -90,7 +90,7 @@
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">通知一覧</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">修理履歴</a>
                                 <a href="{{ route('track') }}"  class="list-group-item list-group-item-action list-group-item-info">トラック予約</a>
-                                <a href="#"  class="list-group-item list-group-item-action list-group-item-info">トラック予約一覧</a>
+                                <a href="{{ route('track_list') }}"  class="list-group-item list-group-item-action list-group-item-info">トラック予約一覧</a>
                                 <a href="#" class="list-group-item list-group-item-action list-group-item-info">管理画面</a>
                             </ul>
                         </div>
